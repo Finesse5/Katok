@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/tvPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Номер телефона: "
+        android:textSize="18sp"
+        android:padding="8dp" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Дата: не выбрана"
+        android:textSize="18sp"
+        android:padding="8dp" />
+
+    <Button
+        android:id="@+id/btnSelectDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Выбрать дату"
+        android:background="@drawable/rounded_button"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Время: не выбрано"
+        android:textSize="18sp"
+        android:padding="8dp" />
+
+    <Button
+        android:id="@+id/btnSelectTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Выбрать время"
+        android:background="@drawable/rounded_button"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/btnSaveRecord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Сохранить запись"
+        android:background="@color/colorPrimary"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/tvUserRecords"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Ваши записи:"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:background="#EAEAEA"
+        android:padding="8dp" />
+</LinearLayout>

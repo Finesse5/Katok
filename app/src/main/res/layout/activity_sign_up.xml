@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="32dp"
+    android:background="#FFFFFF">
+
+    <EditText
+        android:id="@+id/etFirstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Имя"
+        android:layout_marginBottom="8dp"
+        android:padding="16dp"
+        android:background="@drawable/rounded_border"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/etLastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Фамилия"
+        android:layout_marginBottom="8dp"
+        android:padding="16dp"
+        android:background="@drawable/rounded_border"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/etPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Номер телефона"
+        android:inputType="phone"
+        android:layout_marginBottom="16dp"
+        android:padding="16dp"
+        android:background="@drawable/rounded_border"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Зарегистрироваться"
+        android:background="@color/colorAccent"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:padding="12dp" />
+</LinearLayout>
