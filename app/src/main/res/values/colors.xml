@@ -2,4 +2,6 @@
 <resources>
     <color name="colorPrimary">#6200EE</color> <!-- Основной цвет (пример) -->
     <color name="colorAccent">#03DAC5</color> <!-- Акцентный цвет (пример) -->
+    <color name="colorPrimaryDark">#3700B3</color> <!-- Темный фиолетовый -->
+    <color name="white">#FFFFFF</color> <!-- Белый цвет для текста -->
 </resources>

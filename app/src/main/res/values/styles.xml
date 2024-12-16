@@ -1,0 +1,8 @@
+<resources>
+    <!-- Основной стиль приложения -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>  <!-- Убирает ActionBar -->
+        <item name="windowNoTitle">true</item>     <!-- Убирает название приложения -->
+    </style>
+
+</resources>
