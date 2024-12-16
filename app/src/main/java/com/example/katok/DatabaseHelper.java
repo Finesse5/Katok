@@ -66,6 +66,24 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         cursor.close();
         return -1;  // Если пользователь не найден, возвращаем -1
     }
+    // Метод для проверки, занято ли указанное время
+    public boolean isTimeSlotTaken(SQLiteDatabase db, String phoneNumber, String formattedDateTime) {
+        Cursor cursor = db.query(
+                "appointments",                   // Таблица
+                new String[]{"id"},               // Проверяем только id
+                "appointment_time = ?",           // Условие
+                new String[]{formattedDateTime},  // Параметр
+                null, null, null
+        );
+
+        boolean isTaken = (cursor != null && cursor.getCount() > 0);
+
+        if (cursor != null) {
+            cursor.close();
+        }
+
+        return isTaken;
+    }
 
     // Метод для сохранения записи в таблице appointments
     public void saveAppointment(SQLiteDatabase db, String phoneNumber, String formattedDateTime) {

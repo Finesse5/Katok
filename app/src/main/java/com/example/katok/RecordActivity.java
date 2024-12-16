@@ -152,10 +152,16 @@ public class RecordActivity extends AppCompatActivity {
             return;
         }
 
+        // Проверяем, доступно ли указанное время
         DatabaseHelper dbHelper = new DatabaseHelper(this);
         SQLiteDatabase db = dbHelper.getWritableDatabase();
-        long userId = dbHelper.getUserIdByPhoneNumber(db, phoneNumber);
 
+        if (dbHelper.isTimeSlotTaken(db, phoneNumber, formattedDateTime)) {
+            Toast.makeText(this, "Это время уже занято. Выберите другое.", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        long userId = dbHelper.getUserIdByPhoneNumber(db, phoneNumber);
         if (userId == -1) {
             Toast.makeText(this, "Пользователь с таким номером телефона не найден", Toast.LENGTH_SHORT).show();
             return;
@@ -174,6 +180,7 @@ public class RecordActivity extends AppCompatActivity {
             Toast.makeText(this, "Ошибка при сохранении записи.", Toast.LENGTH_SHORT).show();
         }
     }
+
 
     private String formatDateTime(String date, String time) {
         try {
