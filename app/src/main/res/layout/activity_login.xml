@@ -2,10 +2,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="32dp"
-    android:background="#FFFFFF">
+    android:gravity="center"
+    android:background="@drawable/fullhd"
+    android:padding="16dp">
 
-    <EditText
+<EditText
         android:id="@+id/etPhoneNumber"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

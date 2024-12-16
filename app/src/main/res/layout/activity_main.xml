@@ -2,31 +2,32 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/fullhd"
+    android:padding="16dp">
 
-
-
+    <!-- Кнопка "Войти" -->
     <Button
         android:id="@+id/btnLogin"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
         android:text="Войти"
         android:textColor="#FFFFFF"
-        android:background="@color/colorPrimary"
+        android:background="@drawable/button_primary"
         android:textSize="18sp"
-        android:layout_marginBottom="16dp"
         android:padding="12dp" />
 
+    <!-- Кнопка "Зарегистрироваться" -->
     <Button
         android:id="@+id/btnRegister"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Зарегистрироваться"
         android:textColor="#FFFFFF"
-        android:background="@color/colorAccent"
+        android:background="@drawable/button_accent"
         android:textSize="18sp"
-        android:layout_marginTop="16dp"
         android:padding="12dp" />
-
 
 </LinearLayout>
